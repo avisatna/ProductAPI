@@ -1,5 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Product.Editor.Repository;
+using System;
 using System.Collections.Generic;
+using Product.Editor.Model;
 
 namespace ProductAPI.Controllers
 {
@@ -7,24 +10,37 @@ namespace ProductAPI.Controllers
     [ApiController]
     public class ProductController : ControllerBase
     {
+
+        private readonly IProductProvider _provider;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="provider"></param>
+        public ProductController(IProductProvider provider)
+        {
+            _provider = provider;
+        }
+
         // GET api/values
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        public ActionResult<List<ProductInfo>> Get()
         {
-            return new string[] { "value1", "value2" };
+            return _provider.LoadAllProduct("10","1");
         }
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
+        public ActionResult<ProductInfo> Get(Guid id)
         {
-            return "value";
+            return _provider.Load(id);
         }
 
         // POST api/values
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post([FromBody] ProductInfo productInfo)
         {
+            _provider.Save(productInfo);
         }
 
         // PUT api/values/5
@@ -35,8 +51,9 @@ namespace ProductAPI.Controllers
 
         // DELETE api/values/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public void Delete(Guid id)
         {
+            _provider.Delete(id);
         }
     }
 }
