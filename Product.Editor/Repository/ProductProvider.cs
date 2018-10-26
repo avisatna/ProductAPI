@@ -2,7 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace Product.Editor.Repository
 {
@@ -38,8 +37,9 @@ namespace Product.Editor.Repository
                    DisplayPrice = productInfo.DisplayPrice,
                    Name = productInfo.Name,
                    Price = productInfo.Price,
-                   QuantityAvailable = productInfo.QuantityAvailable
-
+                   QuantityAvailable = productInfo.QuantityAvailable,
+                   Images = productInfo.Images,
+                   Variants = productInfo.Variants
                });
         }
     }

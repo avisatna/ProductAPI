@@ -1,0 +1,33 @@
+﻿{
+"name": "Dell Inspiron 5370 Intel Core i7 8th Gen",
+"description": "Dell Inspiron 5370 Intel Core i7 13.3-inch FHD Thin and Light Laptop",
+"price": "$1080",
+"displayPrice": "$1070.00",
+"quantityAvailable": "390",
+"images": [{
+"type": "SmallImage",
+"alt": "Dell Inspiron 5370 Intel Core i7",
+"url": "/Product/Dell5370I7Small.jpg"
+},
+{
+"type": "LargeImage",
+"alt": "Dell Inspiron 5370 Intel Core i7",
+"url": "/Product/Dell5370I7Large.jpg"
+}],
+"variants": [{
+"name": "Dell Inspiron 5370 Intel Core i5",
+"description": "Dell Inspiron 5370 Intel Core i5",
+"price": "$930",
+"weight": "1.5kg",
+"images": [{
+"type": "SmallImage",
+"alt": "Dell Inspiron 5370 Intel Core i5",
+"url": "/Product/Dell5370I5Small.jpg"
+},
+{
+"type": "LargeImage",
+"alt": "Dell Inspiron 5370 Intel Core i5",
+"url": "/Product/Dell5370I5Large.jpg"
+}]
+}]
+}
