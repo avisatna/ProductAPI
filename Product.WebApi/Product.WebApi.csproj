@@ -20,7 +20,6 @@
 
   <ItemGroup>
     <None Include="app.yaml" CopyToOutputDirectory="PreserveNewest" />
-    <None Include="Dockerfile" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 
 </Project>
