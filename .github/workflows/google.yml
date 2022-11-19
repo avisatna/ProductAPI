@@ -45,7 +45,7 @@ jobs:
       uses: 'google-github-actions/auth@v0'
       with:
         token_format: 'access_token'
-        workload_identity_provider: 'https://iam.googleapis.com/projects/531091846928/locations/global/workloadIdentityPools/productapigithub/providers/githuboidc'
+        workload_identity_provider: 'iam.googleapis.com/projects/531091846928/locations/global/workloadIdentityPools/productapigithub/providers/githuboidc'
         service_account: 'qwiklabs-gcp-00-ba82351a59b3@qwiklabs-gcp-00-ba82351a59b3.iam.gserviceaccount.com'
 
     # Alternative option - authentication via credentials json
