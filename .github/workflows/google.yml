@@ -64,7 +64,7 @@ jobs:
       with:
         cluster_name: ${{ env.GKE_CLUSTER }}
         location: ${{ env.GKE_ZONE }}
-        project_id: 'qwiklabs-gcp-00-ba82351a59b3'
+        project_id: qwiklabs-gcp-00-ba82351a59b3
 
     # Build the Docker image
     - name: Build
